@@ -1,0 +1,166 @@
+pi@raspberrypi:~ $ sudo tcpdump -i eth0 udp port 67 and port 68 -e -n -vv
+tcpdump: listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+13:55:17.436384 98:29:a6:48:9d:27 > ff:ff:ff:ff:ff:ff, ethertype IPv4 (0x0800), length 389: (tos 0xa0, ttl 64, id 11914, offset 0, flags [none], proto UDP (17), length 375)
+    0.0.0.0.68 > 255.255.255.255.67: [udp sum ok] BOOTP/DHCP, Request from 98:29:a6:48:9d:27, length 347, xid 0x2e3a7cf6, secs 4, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 98:29:a6:48:9d:27
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message Option 53, length 1: Discover
+            MSZ Option 57, length 2: 1464
+            Parameter-Request Option 55, length 35:
+              Subnet-Mask, Time-Zone, Default-Gateway, Time-Server
+              IEN-Name-Server, Domain-Name-Server, Hostname, BS
+              Domain-Name, RP, EP, RSZ
+              TTL, BR, YD, YS
+              NTP, Vendor-Option, Requested-IP, Lease-Time
+              Server-ID, RN, RB, Vendor-Class
+              TFTP, BF, GUID, Option 128
+              Option 129, Option 130, Option 131, Option 132
+              Option 133, Option 134, Option 135
+            GUID Option 97, length 17: 0.120.154.60.219.212.215.17.231.128.199.152.41.166.72.157.39
+            NDI Option 94, length 3: 1.3.16
+            ARCH Option 93, length 2: 7
+            Vendor-Class Option 60, length 32: "PXEClient:Arch:00007:UNDI:003016"
+13:55:17.437785 dc:a6:32:49:c4:6f > ff:ff:ff:ff:ff:ff, ethertype IPv4 (0x0800), length 342: (tos 0xc0, ttl 64, id 13997, offset 0, flags [none], proto UDP (17), length 328)
+    192.168.0.11.67 > 255.255.255.255.68: [bad udp cksum 0xc1f8 -> 0x51ca!] BOOTP/DHCP, Reply, length 300, xid 0x2e3a7cf6, secs 4, Flags [Broadcast] (0x8000)
+          Server-IP 192.168.0.11
+          Client-Ethernet-Address 98:29:a6:48:9d:27
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message Option 53, length 1: Offer
+            Server-ID Option 54, length 4: 192.168.0.11
+            Vendor-Class Option 60, length 9: "PXEClient"
+            GUID Option 97, length 17: 0.120.154.60.219.212.215.17.231.128.199.152.41.166.72.157.39
+13:55:19.478588 10:50:72:0e:cc:50 > ff:ff:ff:ff:ff:ff, ethertype IPv4 (0x0800), length 328: (tos 0x0, ttl 64, id 0, offset 0, flags [none], proto UDP (17), length 314)
+    192.168.0.1.67 > 255.255.255.255.68: [udp sum ok] BOOTP/DHCP, Reply, length 286, xid 0x2e3a7cf6, Flags [Broadcast] (0x8000)
+          Your-IP 192.168.0.8
+          Client-Ethernet-Address 98:29:a6:48:9d:27
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message Option 53, length 1: Offer
+            Server-ID Option 54, length 4: 192.168.0.1
+            Lease-Time Option 51, length 4: 14193
+            Subnet-Mask Option 1, length 4: 255.255.255.0
+            Default-Gateway Option 3, length 4: 192.168.0.1
+            Domain-Name-Server Option 6, length 4: 192.168.0.1
+            RN Option 58, length 4: 7200
+            RB Option 59, length 4: 12600
+13:55:25.436755 98:29:a6:48:9d:27 > ff:ff:ff:ff:ff:ff, ethertype IPv4 (0x0800), length 401: (tos 0xa0, ttl 64, id 11915, offset 0, flags [none], proto UDP (17), length 387)
+    0.0.0.0.68 > 255.255.255.255.67: [udp sum ok] BOOTP/DHCP, Request from 98:29:a6:48:9d:27, length 359, xid 0x2e3a7cf6, secs 4, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 98:29:a6:48:9d:27
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message Option 53, length 1: Request
+            Server-ID Option 54, length 4: 192.168.0.1
+            Requested-IP Option 50, length 4: 192.168.0.8
+            MSZ Option 57, length 2: 65280
+            Parameter-Request Option 55, length 35:
+              Subnet-Mask, Time-Zone, Default-Gateway, Time-Server
+              IEN-Name-Server, Domain-Name-Server, Hostname, BS
+              Domain-Name, RP, EP, RSZ
+              TTL, BR, YD, YS
+              NTP, Vendor-Option, Requested-IP, Lease-Time
+              Server-ID, RN, RB, Vendor-Class
+              TFTP, BF, GUID, Option 128
+              Option 129, Option 130, Option 131, Option 132
+              Option 133, Option 134, Option 135
+            GUID Option 97, length 17: 0.120.154.60.219.212.215.17.231.128.199.152.41.166.72.157.39
+            NDI Option 94, length 3: 1.3.16
+            ARCH Option 93, length 2: 7
+            Vendor-Class Option 60, length 32: "PXEClient:Arch:00007:UNDI:003016"
+13:55:25.442128 10:50:72:0e:cc:50 > ff:ff:ff:ff:ff:ff, ethertype IPv4 (0x0800), length 328: (tos 0x0, ttl 64, id 0, offset 0, flags [none], proto UDP (17), length 314)
+    192.168.0.1.67 > 255.255.255.255.68: [udp sum ok] BOOTP/DHCP, Reply, length 286, xid 0x2e3a7cf6, Flags [Broadcast] (0x8000)
+          Your-IP 192.168.0.8
+          Client-Ethernet-Address 98:29:a6:48:9d:27
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message Option 53, length 1: ACK
+            Server-ID Option 54, length 4: 192.168.0.1
+            Lease-Time Option 51, length 4: 14400
+            Subnet-Mask Option 1, length 4: 255.255.255.0
+            Default-Gateway Option 3, length 4: 192.168.0.1
+            Domain-Name-Server Option 6, length 4: 192.168.0.1
+            RN Option 58, length 4: 7200
+            RB Option 59, length 4: 12600
+13:55:31.778644 98:29:a6:48:9d:27 > ff:ff:ff:ff:ff:ff, ethertype IPv4 (0x0800), length 389: (tos 0xa0, ttl 64, id 12737, offset 0, flags [none], proto UDP (17), length 375)
+    0.0.0.0.68 > 255.255.255.255.67: [udp sum ok] BOOTP/DHCP, Request from 98:29:a6:48:9d:27, length 347, xid 0x2e3a7cf9, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 98:29:a6:48:9d:27
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message Option 53, length 1: Discover
+            MSZ Option 57, length 2: 1464
+            Parameter-Request Option 55, length 35:
+              Subnet-Mask, Time-Zone, Default-Gateway, Time-Server
+              IEN-Name-Server, Domain-Name-Server, Hostname, BS
+              Domain-Name, RP, EP, RSZ
+              TTL, BR, YD, YS
+              NTP, Vendor-Option, Requested-IP, Lease-Time
+              Server-ID, RN, RB, Vendor-Class
+              TFTP, BF, GUID, Option 128
+              Option 129, Option 130, Option 131, Option 132
+              Option 133, Option 134, Option 135
+            GUID Option 97, length 17: 0.120.154.60.219.212.215.17.231.128.199.152.41.166.72.157.39
+            NDI Option 94, length 3: 1.3.16
+            ARCH Option 93, length 2: 7
+            Vendor-Class Option 60, length 32: "PXEClient:Arch:00007:UNDI:003016"
+13:55:31.779997 dc:a6:32:49:c4:6f > ff:ff:ff:ff:ff:ff, ethertype IPv4 (0x0800), length 342: (tos 0xc0, ttl 64, id 14471, offset 0, flags [none], proto UDP (17), length 328)
+    192.168.0.11.67 > 255.255.255.255.68: [bad udp cksum 0xc1f8 -> 0x51cb!] BOOTP/DHCP, Reply, length 300, xid 0x2e3a7cf9, Flags [Broadcast] (0x8000)
+          Server-IP 192.168.0.11
+          Client-Ethernet-Address 98:29:a6:48:9d:27
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message Option 53, length 1: Offer
+            Server-ID Option 54, length 4: 192.168.0.11
+            Vendor-Class Option 60, length 9: "PXEClient"
+            GUID Option 97, length 17: 0.120.154.60.219.212.215.17.231.128.199.152.41.166.72.157.39
+13:55:31.781678 10:50:72:0e:cc:50 > ff:ff:ff:ff:ff:ff, ethertype IPv4 (0x0800), length 328: (tos 0x0, ttl 64, id 0, offset 0, flags [none], proto UDP (17), length 314)
+    192.168.0.1.67 > 255.255.255.255.68: [udp sum ok] BOOTP/DHCP, Reply, length 286, xid 0x2e3a7cf9, Flags [Broadcast] (0x8000)
+          Your-IP 192.168.0.8
+          Client-Ethernet-Address 98:29:a6:48:9d:27
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message Option 53, length 1: Offer
+            Server-ID Option 54, length 4: 192.168.0.1
+            Lease-Time Option 51, length 4: 14394
+            Subnet-Mask Option 1, length 4: 255.255.255.0
+            Default-Gateway Option 3, length 4: 192.168.0.1
+            Domain-Name-Server Option 6, length 4: 192.168.0.1
+            RN Option 58, length 4: 7200
+            RB Option 59, length 4: 12600
+13:55:35.437019 98:29:a6:48:9d:27 > ff:ff:ff:ff:ff:ff, ethertype IPv4 (0x0800), length 401: (tos 0xa0, ttl 64, id 12738, offset 0, flags [none], proto UDP (17), length 387)
+    0.0.0.0.68 > 255.255.255.255.67: [udp sum ok] BOOTP/DHCP, Request from 98:29:a6:48:9d:27, length 359, xid 0x2e3a7cf9, Flags [Broadcast] (0x8000)
+          Client-Ethernet-Address 98:29:a6:48:9d:27
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message Option 53, length 1: Request
+            Server-ID Option 54, length 4: 192.168.0.1
+            Requested-IP Option 50, length 4: 192.168.0.8
+            MSZ Option 57, length 2: 65280
+            Parameter-Request Option 55, length 35:
+              Subnet-Mask, Time-Zone, Default-Gateway, Time-Server
+              IEN-Name-Server, Domain-Name-Server, Hostname, BS
+              Domain-Name, RP, EP, RSZ
+              TTL, BR, YD, YS
+              NTP, Vendor-Option, Requested-IP, Lease-Time
+              Server-ID, RN, RB, Vendor-Class
+              TFTP, BF, GUID, Option 128
+              Option 129, Option 130, Option 131, Option 132
+              Option 133, Option 134, Option 135
+            GUID Option 97, length 17: 0.120.154.60.219.212.215.17.231.128.199.152.41.166.72.157.39
+            NDI Option 94, length 3: 1.3.16
+            ARCH Option 93, length 2: 7
+            Vendor-Class Option 60, length 32: "PXEClient:Arch:00007:UNDI:003016"
+13:55:35.440031 10:50:72:0e:cc:50 > ff:ff:ff:ff:ff:ff, ethertype IPv4 (0x0800), length 328: (tos 0x0, ttl 64, id 0, offset 0, flags [none], proto UDP (17), length 314)
+    192.168.0.1.67 > 255.255.255.255.68: [udp sum ok] BOOTP/DHCP, Reply, length 286, xid 0x2e3a7cf9, Flags [Broadcast] (0x8000)
+          Your-IP 192.168.0.8
+          Client-Ethernet-Address 98:29:a6:48:9d:27
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message Option 53, length 1: ACK
+            Server-ID Option 54, length 4: 192.168.0.1
+            Lease-Time Option 51, length 4: 14400
+            Subnet-Mask Option 1, length 4: 255.255.255.0
+            Default-Gateway Option 3, length 4: 192.168.0.1
+            Domain-Name-Server Option 6, length 4: 192.168.0.1
+            RN Option 58, length 4: 7200
+            RB Option 59, length 4: 12600
