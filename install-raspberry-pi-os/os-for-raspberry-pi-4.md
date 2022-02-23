@@ -37,7 +37,10 @@ That is why, just in case, I have a list of different OSes that can be loaded to
 * Alpine Linux
 * Kano OS
 * KDE Plasma Bigscreen
-* Manjaro Linux
+* Manjaro Linux [https://manjaro.org/download/#raspberry-pi-4-xfce](https://manjaro.org/download/#raspberry-pi-4-xfce)
+
+![](../.gitbook/assets/Screenshot\_2022-02-22\_19-44-33.jpg)
+
 * Volumio
 * FreeBSD, NetBSD [https://freebsdfoundation.org/freebsd-project/resources/installing-freebsd-for-raspberry-pi/](https://freebsdfoundation.org/freebsd-project/resources/installing-freebsd-for-raspberry-pi/)
 
