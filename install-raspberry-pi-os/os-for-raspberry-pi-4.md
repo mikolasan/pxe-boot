@@ -20,7 +20,7 @@ I rebooted Raspbian many times and once in a while it actually boots. That time 
 
 That is why, just in case, I have a list of different OSes that can be loaded to Raspberry Pi 4 sometimes just for test.
 
-* Raspberry Pi OS (Raspbian) [https://www.raspberrypi.org/software/operating-systems/](https://www.raspberrypi.org/software/operating-systems/)
+* Raspberry Pi OS (Raspbian) [https://www.raspberrypi.org/software/operating-systems/](https://www.raspberrypi.org/software/operating-systems/) (Raspbian with desktop requires > 4GB SD card, a real bummer)
 * Ubuntu Mate
 * Ubuntu Server [https://ubuntu.com/download/raspberry-pi](https://ubuntu.com/download/raspberry-pi)
 * LibreELEC
