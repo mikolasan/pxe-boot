@@ -10,8 +10,8 @@ Station IP address is 192.168.0.7
 PXE-E21: Remote boot cancelled
 ```
 
-{% content-ref url="../troubleshooting/pxe-e21-remote-boot-cancelled.md" %}
-[pxe-e21-remote-boot-cancelled.md](../troubleshooting/pxe-e21-remote-boot-cancelled.md)
+{% content-ref url="../troubleshooting/pxe-e21-remote-boot-cancelled/" %}
+[pxe-e21-remote-boot-cancelled](../troubleshooting/pxe-e21-remote-boot-cancelled/)
 {% endcontent-ref %}
 
 This error is very cruel, because it's not giving you any idea of what can cause it. I started thinking about driver updates, missing configuration lines, not suitable efi files and even about running another DHCP server.

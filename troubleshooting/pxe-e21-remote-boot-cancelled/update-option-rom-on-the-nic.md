@@ -8,8 +8,8 @@ Option ROM area in the flash is not supported for this device on port 1
 
 I have it solved in
 
-{% content-ref url="the-case-without-proxy-dhcp.md" %}
-[the-case-without-proxy-dhcp.md](the-case-without-proxy-dhcp.md)
+{% content-ref url="../../the-case-without-proxy-dhcp.md" %}
+[the-case-without-proxy-dhcp.md](../../the-case-without-proxy-dhcp.md)
 {% endcontent-ref %}
 
 But I still want to leave my notes about firmware update procedure, maybe I will need it at some point in the future.
