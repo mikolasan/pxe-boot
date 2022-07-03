@@ -2,7 +2,8 @@
 
 * [Overview](README.md)
 * [Install Raspberry Pi OS](install-raspberry-pi-os/README.md)
-  * [OS for Raspberry Pi 4](install-raspberry-pi-os/os-for-raspberry-pi-4.md)
+  * [Raspberry Pi 4 not booting](install-raspberry-pi-os/os-for-raspberry-pi-4.md)
+  * [List of OSes for Raspberry Pi](install-raspberry-pi-os/list-of-oses-for-raspberry-pi.md)
 * [Install PXE server on Raspberry Pi 4](install-pxe-server-on-raspberry-pi-4/README.md)
   * [NFS kernel options](install-pxe-server-on-raspberry-pi-4/nfs-kernel-options.md)
   * [Kernel w/ initramfs](install-pxe-server-on-raspberry-pi-4/kernel-w-initramfs.md)

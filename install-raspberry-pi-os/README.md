@@ -6,7 +6,9 @@ description: First you need an operating system on the server
 
 Just follow the official tutorial: [https://www.raspberrypi.org/documentation/installation/installing-images/linux.md](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)
 
-It's simple. Here is my one-liner:
+## Linux
+
+It's simple on Linux. Here is my one-liner:
 
 ```bash
 unzip -p 2022-01-28-raspios-bullseye-arm64.zip \
@@ -29,3 +31,9 @@ xz -d -c Manjaro-ARM-xfce-rpi4-21.12.img.xz \
 
 \
 Source: [https://raspberrypi.stackexchange.com/questions/32200/how-do-i-write-the-retropie-img-file-to-my-sd-card](https://raspberrypi.stackexchange.com/questions/32200/how-do-i-write-the-retropie-img-file-to-my-sd-card)
+
+## Windows
+
+It's simple on Windows.
+
+![Raspberry Pi Imager](<../.gitbook/assets/2022-07-02 22\_37\_47-Raspberry Pi Imager v1.4.png>)
