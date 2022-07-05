@@ -6,7 +6,9 @@ coverY: 0
 
 # Overview
 
-Hello. I'm Nikolay Neupokoev, and this is my comprehensive tutorial about PXE Boot on BIOS and UEFI clients.
+Hello. I'm Nikolay Neupokoev , and this is my comprehensive tutorial about PXE Boot on BIOS and UEFI clients.
+
+
 
 In this short tutorial I will show how to boot Live-CD type systems over the network. We are going to use Raspberry PI board as a server. For operating system I chose Raspberry Pi OS (early known as Raspbian) which is technically Debian 10 (Buster).
 

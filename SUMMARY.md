@@ -34,3 +34,4 @@
   * [bzImage has invalid signature](secure-boot-enabled/bzimage-has-invalid-signature.md)
 * [Kaspersy Rescue Disk 18](kaspersy-rescue-disk-18.md)
 * [Reference](reference.md)
+* [About the author](about-the-author.md)
