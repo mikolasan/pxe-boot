@@ -36,7 +36,9 @@ There is one explanation that makes sense
 
 Source: [M33P](https://forums.raspberrypi.com/memberlist.php?mode=viewprofile\&u=33446) from [https://forums.raspberrypi.com/viewtopic.php?t=27470](https://forums.raspberrypi.com/viewtopic.php?t=27470)
 
+> Error -110 means timeout. Basically, your MMC controller is not able to talk correctly with your SD card. It usually happens when your card is not correctly inserted in the slot (for example the spring is pushing back your card too far) or maybe you are using a micro SD card and it is not correctly inserted in the SD card adapter. What can also happen is that your SD card adapter is slightly broken and some connections are not correctly made (e.g. your card has negotiated 4 bits mode and some lines are in fact not connected).
 
+Source: [https://unix.stackexchange.com/questions/344083/mmc0-error-110-whilst-initialising-sd-card](https://unix.stackexchange.com/questions/344083/mmc0-error-110-whilst-initialising-sd-card)
 
 ## Try another SD card
 

@@ -37,3 +37,5 @@ Source: [https://raspberrypi.stackexchange.com/questions/32200/how-do-i-write-th
 It's simple on Windows.
 
 ![Raspberry Pi Imager](<../.gitbook/assets/2022-07-02 22\_37\_47-Raspberry Pi Imager v1.4.png>)
+
+Images downloaded by **Raspberry Pi Imager** are stored in `C:\Users\YOUR_USER_NAME\AppData\Local\Raspberry Pi\Imager\cache`. It stores only the last image by the name `lastdownload.cache`
