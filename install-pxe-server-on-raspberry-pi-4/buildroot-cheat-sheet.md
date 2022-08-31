@@ -6,6 +6,8 @@ make ghatanothoa_defconfig
 make xconfig # if any additional changes
 make savedefconfig # save these additional changes
 make linux-xconfig # if any additional changes
-cp output/
+# save linux config
+cp output/build/linux-5.12.10/.config \
+    board/<brand>/<board>/linux.config 
 make
 ```
