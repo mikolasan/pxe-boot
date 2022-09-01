@@ -30,6 +30,7 @@
   * [PXE-E23: Client received TFTP error from server](troubleshooting/pxe-e23-client-received-tftp-error-from-server.md)
   * [Invalid DOS header magic](troubleshooting/invalid-dos-header-magic.md)
   * [Unable to fetch TFTP image: Invalid Parameter](troubleshooting/unable-to-fetch-tftp-image-invalid-parameter.md)
+  * [EFI boot manager](troubleshooting/efi-boot-manager.md)
 * [Secure Boot and custom certificates](secure-boot-enabled/README.md)
   * [bzImage has invalid signature](secure-boot-enabled/bzimage-has-invalid-signature.md)
 * [Kaspersy Rescue Disk 18](kaspersy-rescue-disk-18.md)
