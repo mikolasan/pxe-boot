@@ -120,6 +120,8 @@ And the background **/srv/tftpboot/pxelinux.cfg/logo.png**
 
 ![logo.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1627461597527/6EueRlS2J.png)
 
+Check PXELINUX configuration syntax here: [https://wiki.syslinux.org/wiki/index.php?title=Config](https://wiki.syslinux.org/wiki/index.php?title=Config)
+
 We will add real entries in the Test section.
 
 ### dnsmasq
