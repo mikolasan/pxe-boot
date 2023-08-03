@@ -1,8 +1,19 @@
 # Unable to fetch TFTP image: Invalid Parameter
 
-When you use dnsmasq in proxy mode and you need PXE Boot in UEFI mode on machine with Secure Boot enabled, then PXE will work, TFTP will work, shim will work, but grubnetx64.efi will not.
+When you use dnsmasq in proxy mode and you need PXE Boot in UEFI mode on machine with Secure Boot enabled, then PXE will work, TFTP will work,&#x20;
 
 ![](<../.gitbook/assets/2021-08-05 13-58-47.PNG>)
+
+shim will work, but next step apparently failed. Check your logs:
+
+```
+Jul 28 18:27:16 dnsmasq-tftp[28673]: sent /srv/tftpboot/efi64/bootx64.efi to 192.168.0.161
+Jul 28 18:27:16 dnsmasq-tftp[28673]: file /srv/tftpboot/efi64/grubx64.efi not found
+```
+
+(where bootx64.efi is jusr a renamed shimx64.efi)
+
+Also grubnetx64.efi might not work
 
 Grub 2.06 cannot work with DHCP proxy. It will try to use master DHCP server.
 
