@@ -4,7 +4,9 @@ The setup of PXE boot for UEFI computers is slightly different from the setup su
 
 And dnsmasq configuration should be updated accordingly
 
-<pre data-title="/etc/dnsmasq.conf"><code>#Disable DNS Server
+{% code title="/etc/dnsmasq.conf" %}
+```
+#Disable DNS Server
 port=0
 
 #Respond to PXE request for the specified network;
@@ -24,8 +26,8 @@ dhcp-boot=efi64/bootx64.efi
 # PXEClient:Arch:00000
 pxe-service=X86PC, "Boot BIOS PXE", pxelinux.0
 
-<strong><a data-footnote-ref href="#user-content-fn-1"># PXEClient:Arch:00007</a>
-</strong><a data-footnote-ref href="#user-content-fn-2">pxe-service=BC_EFI, "Boot UEFI PXE-BC", efi64/bootx64.efi</a>
+# PXEClient:Arch:00007
+pxe-service=BC_EFI, "Boot UEFI PXE-BC", efi64/bootx64.efi
 
 # PXEClient:Arch:00009
 pxe-service=X86-64_EFI, "Boot UEFI PXE-64", efi64/bootx64.efi
@@ -46,7 +48,8 @@ log-facility=/var/log/dnsmasq.log   # logfile path.
 log-async
 log-queries # log queries.
 log-dhcp    # log dhcp related messages.
-</code></pre>
+```
+{% endcode %}
 
 But usually it's not that simple.
 
@@ -63,7 +66,3 @@ PXE-E21: Remote boot cancelled
 {% endcontent-ref %}
 
 This error is very cruel, because it's not giving you any idea of what can cause it. I started thinking about driver updates, missing configuration lines, not suitable efi files and even about running another DHCP server.
-
-[^1]: 
-
-[^2]: 
